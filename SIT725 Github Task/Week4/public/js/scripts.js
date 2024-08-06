@@ -32,9 +32,9 @@ const addComments = (items) => {
         let itemToAppend = '<div class="col-8">' +
             '<div class="card card-white post">' +
             '<div class="post-heading"><a><b>' + item.first_name + item.last_name + '</b></a></div>' +
-            '<div class="post-description"><p>' + item.message + '</p>' + 
+            '<div class="post-description"><p>' + item.message + '</p>' +
             '</div></div></div>';
-        $("#card-comment").append(itemToAppend);    
+        $("#card-comment").append(itemToAppend);
     });
 }
 
@@ -45,9 +45,9 @@ const submitForm = () => {
     formData.email = $('#email').val();
     formData.message = $('#message').val(),
 
-    console.log("Form Data Submitted: ", formData);
+        console.log("Form Data Submitted: ", formData);
     postComment(formData);
-    }
+}
 
 function postComment(comment) {
     $.ajax({
@@ -61,22 +61,22 @@ function postComment(comment) {
                 modal.close();
 
                 alert('Comment Post Successful');
+
+                //Reload page after success
                 location.reload();
             }
         }
     });
 }
 
-function getAllComments(){
-    $.get('/api/comments', (response)=>{
+function getAllComments() {
+    $.get('/api/comments', (response) => {
         // response's data is in array format, so we can use it
         if (response.statusCode === 200) {
             addComments(response.data);
         }
     });
 }
-
-
 
 $(document).ready(function () {
     $('.materialboxed').materialbox();
