@@ -1,0 +1,35 @@
+.navbar-size {
+    width: 95%;
+    margin: 0 auto;
+}
+.user-image-size {
+    height: 56px;
+    margin: 4px 0;
+}
+.main-body {
+    background-color: #d3a375;
+    color: white;
+    height: calc(100vh - 64px);
+}
+.materialboxed-image {
+    margin: 0 auto;
+    height: 400px;
+}
+.click-me-button {
+    background-color: #BCB88A;
+    margin-top: 50px;
+}
+
+.post-heading {
+    height: 20px;
+    padding: 20px 15px;
+}
+
+.post .post-description {
+    padding: 15px;
+    font-size: 14px;
+    color:black
+}
+
+
+
