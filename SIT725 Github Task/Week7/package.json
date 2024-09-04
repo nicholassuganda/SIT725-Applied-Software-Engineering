@@ -1,0 +1,23 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "main": "server_get.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "express": "^4.19.2",
+    "mocha": "^10.7.3",
+    "mongodb": "^4.4.1",
+    "request": "^2.88.2"
+  },
+  "dependencies": {
+    "socket.io": "^4.7.5"
+  }
+}
